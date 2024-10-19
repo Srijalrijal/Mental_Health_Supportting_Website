@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Wireframe</title>
+    <link rel="stylesheet" href="CSS/Home.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Resources
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="Article.html">Article Links And Videos</a>
+                        <a href="Seehelp.html">See Help Tools</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Support Service
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="Professional.html">Professional Directory</a>
+                        <a href="Helpline.html">Helpline Directory</a>
+                    </div>
+                </li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+            <div class="branding">
+                Manko Sahara
+            </div>
+            <div class="buttons">
+                <button id="signup">Signup</button>
+                <button id="login">Login</button>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="main-image">
+        <h1>Our Mission</h1>
+    </div>
+    <div class="main">
+        <p><b>"Manko Sahara"</b> is dedicated to breaking the stigma surrounding mental health in Nepal by providing culturally relevant resources, education, and support. Our mission is to empower individuals with the knowledge, tools, and connections needed to foster mental well-being, create a compassionate community, and ensure that everyone has access to mental health care, regardless of their location or background. We strive to collaborate with local professionals, utilize culturally sensitive approaches, and promote open dialogue to build a society where mental health is understood, respected, and prioritized.</p>
+    </div>
+
+    <div class="image">
+        <img src="Images/intro picture.jpg" alt="Intro Image">
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="Images/A1.png" style="width:80%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="Images/F2.png" style="width:80%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="Images/F3.png" style="width:80%">
+         </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+    document.getElementById('signup').addEventListener('click', function() {
+        window.location.href = 'Signup.html'; 
+    });
+
+    document.getElementById('login').addEventListener('click', function() {
+        window.location.href = 'Login.html';
+    });
+
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+</html>

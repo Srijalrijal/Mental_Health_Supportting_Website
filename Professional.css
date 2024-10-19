@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+        color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #066aad;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center; 
+}
+
+.nav-links li {
+    margin-right: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+.branding {
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    margin:  auto;
+    display: block; 
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    align-self: center; 
+}
+
+.dropbtn:hover{
+    color: #ff6347;
+}
+.dropdown .dropbtn {
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.heading{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+  .directories {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.directories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.directories li {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.directories li:last-child {
+  border-bottom: none;
+}
+
+.directories .hospital-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  display: block;
+}
+
+.directories .hospital-info {
+  margin-bottom: 20px;
+}
+
+.directories .hospital-info span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.directories .address {
+  font-size: 16px;
+  color: #666;
+}
+
+.directories .contact {
+  font-size: 16px;
+  color: #666;
+}
+
+.directories .services {
+  margin-bottom: 20px;
+}
+
+.directories .services ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.directories .services li {
+  margin-bottom: 10px;
+}
+
+.directories .services li:before {
+  content: "\2022";
+  font-size: 18px;
+  color: #666;
+  margin-right: 10px;
+}
